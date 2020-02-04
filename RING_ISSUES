@@ -1,0 +1,39 @@
+[2/4/2020, 3:15:04 PM] [Ring] Snapshot for Hall de Entrada Requested
+[2/4/2020, 3:15:32 PM] [Ring] Snapshot for Hall de Entrada Received (27.966s)
+[2/4/2020, 3:16:29 PM] [Ring] Preparing Live Stream for Hall de Entrada
+[2/4/2020, 3:16:31 PM] [Ring] Waiting for stream data from Hall de Entrada (2.193s)
+[2/4/2020, 3:16:55 PM] [Ring] ffmpeg stderr: [sdp @ 0x7f8a5a808c00] Could not find codec parameters for stream 1 (Video: h264, none): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+
+[2/4/2020, 3:16:55 PM] [Ring] ffmpeg stderr: Guessed Channel Layout for Input Stream #0.0 : mono
+Input #0, sdp, from 'pipe:':
+  Metadata:
+    title           : Talk
+  Duration: N/A, bitrate: 64 kb/s
+    Stream #0:0: Audio: pcm_mulaw, 8000 Hz, mono, s16, 64 kb/s
+    Stream #0:1: Video: h264, none, 90k tbr, 90k tbn, 180k tbc
+
+[2/4/2020, 3:16:55 PM] [Ring] ffmpeg stderr: Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_mulaw (native) -> aac (libfdk_aac))
+
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: pipe:: Operation timed out
+
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: Output #0, rtp, to 'srtp://192.168.3.114:55983?localrtcpport=53621&pkt_size=188':
+  Metadata:
+    title           : Talk
+    encoder         : Lavf58.29.100
+    Stream #0:0: Audio: aac (libfdk_aac) (ELD), 16000 Hz, mono, s16, 24 kb/s
+    Metadata:
+      encoder         : Lavc58.54.100 libfdk_aac
+
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: [libfdk_aac @ 0x7f8a5b003c00] 
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: Trying to remove 512 samples, but the queue is empty
+[rtp @ 0x7f8a5b001800] Timestamps are unset in a packet for stream 0. This is deprecated and will stop working in the future. Fix your code to set the timestamps properly
+[rtp @ 0x7f8a5b001800] 
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: Encoder did not produce proper pts, making some up.
+
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg stderr: size=       0kB time=00:00:00.03 bitrate=  35.0kbits/s speed=0.00139x    
+video:0kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 45.833332%
+
+[2/4/2020, 3:17:18 PM] [Ring] ffmpeg exited with code 0
